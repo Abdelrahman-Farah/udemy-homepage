@@ -40,9 +40,6 @@ nav {
     color: #A435F0;
 }
 
-form {
-    display: inline-block;
-}
 
 .search_bar {
     flex: 1;
@@ -56,10 +53,9 @@ form {
     display: flex;
     align-items: center;
 }
-
-.search_bar form {
-    width: 100%;
-    display: flex;
+.search_bar button {
+    background: none;
+    border: none;
 }
 
 .search_icon {
@@ -85,7 +81,7 @@ form {
     font-size: 1em;
 }
 
-#search_submit:hover {
+#search_submit:hover{
     color: #A435F0;
     cursor: pointer;
 }
@@ -95,7 +91,7 @@ form {
     height: 22px;
     margin: 5px 1em 0 0;
 }
-.cart:hover {
+.cart:hover, .search_icon:hover {
     filter: invert(45%) sepia(42%) saturate(5827%) hue-rotate(236deg) brightness(91%) contrast(89%);
 }
 
@@ -189,11 +185,15 @@ header {
     padding: 0 2.5em;
 }
 
+#div59 p {
+    margin-right: 10em;
+}
+
 .courses {
     padding-left: 0px;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -225,4 +225,54 @@ header {
 .courses .price {
     margin-top: 5px;
     margin-bottom: 40px;
+}
+@media (max-width: 1205px) {
+    main {
+        width: 1205px;
+    }
+    #div59 {
+        width: 90%;
+    }
+}
+@media (max-width: 1065px) {
+    main {
+        width: 1065px;
+    }
+    #div59 {
+        width: 90%;
+    }
+}
+@media (max-width: 900px)  {
+    main {
+        width: 900px;
+    }
+    .drop_down {
+        display: none;
+    }
+    .custom_button {
+        display: none;
+    }
+    .search_bar{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    header {
+        background-color: #F8F9FB;
+        flex-direction: column;
+    }
+    header img {
+        width: 50em;
+        height: 300px;
+    }
+    .outer {
+        margin: auto auto;
+    }
+    #div59 {
+        width: 85%;
+    }
+    .tracks {
+        flex-wrap: wrap;
+    }
 }
