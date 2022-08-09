@@ -23,6 +23,12 @@ nav {
     position: relative;
 }
 
+.menu {
+    height: 35px;
+    width: 35px;
+    display: none;
+}
+
 .logo {
     width: 96px;
     height: 50px;
@@ -277,6 +283,14 @@ header {
     .search_bar,
     .cart {
         display: none;
+    }
+
+    .menu {
+        display: inline;
+    }
+
+    .logo {
+        flex: 1;
     }
 
     header {
