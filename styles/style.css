@@ -280,8 +280,7 @@ header {
 
     .drop_down,
     .custom_button,
-    .search_bar,
-    .cart {
+    .search_bar {
         display: none;
     }
 
