@@ -324,3 +324,20 @@ header {
         width: 85%;
     }
 }
+
+@media (max-width: 470px) {
+    main {
+        width: 470px;
+    }
+
+    .watch {
+        width: 450px;
+        height: 450px;
+    }
+    .inner_card {
+        margin: 2px;
+    }
+    .card {
+        width: 75%;
+    }
+}
