@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFFFF;
+    background-color: #fff;
     margin: 0;
     font-family: 'Cairo', sans-serif;
 }
@@ -9,16 +9,17 @@ main {
     margin: auto;
 }
 
+/* Navigation Bar */
 nav {
-    background-color: #FFFFFF;
+    background-color: #fff;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     display: flex;
     align-items: center;
     box-shadow: 0 -3em 3em rgba(0,0,0,0.1),
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
+                0 0  0 2px rgb(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
     position: relative;
 }
 
@@ -31,28 +32,28 @@ nav {
 }
 
 .drop_down {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     margin: 0 1em;
 }
 
 .drop_down:hover {
-    color: #A435F0;
+    color: #a435f0;
 }
-
 
 .search_bar {
     flex: 1;
     height: 50px;
-    background-color: #F7F9FA;
+    background-color: #f7f9fa;
     border: 1.5px solid black;
-    padding: 0px 10px;
+    padding: 0 10px;
 
     border-radius: 5em;
 
     display: flex;
     align-items: center;
 }
+
 .search_bar button {
     background: none;
     border: none;
@@ -70,6 +71,7 @@ nav {
     border: none;
     background: none;
 }
+
 .search_box:focus  {
     outline: none;
 }
@@ -82,7 +84,7 @@ nav {
 }
 
 #search_submit:hover{
-    color: #A435F0;
+    color: #a435f0;
     cursor: pointer;
 }
 
@@ -91,31 +93,33 @@ nav {
     height: 22px;
     margin: 5px 1em 0 0;
 }
-.cart:hover, .search_icon:hover {
+
+.cart:hover,
+.search_icon:hover {
     filter: invert(45%) sepia(42%) saturate(5827%) hue-rotate(236deg) brightness(91%) contrast(89%);
 }
 
 .log_in {
     padding: 0 15px;
     height: 40px;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #fff;
+    color: #000;
 }
 
 .log_in:hover {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     cursor: pointer;
 }
 
 .sign_up {
     width: 80px;
     height: 40px;
-    background-color: #1C1D1F;
-    color: #FFFFFF;
+    background-color: #1c1d1f;
+    color: #fff;
 }
 
 .sign_up:hover {
-    background-color: #000000;
+    background-color: #000;
     cursor: pointer;
 }
 
@@ -123,8 +127,8 @@ nav {
     width: 40px;
     height: 40px;
     padding: 10;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #fff;
+    color: #000;
 }
 
 .custom_button {
@@ -132,26 +136,27 @@ nav {
     margin-right: 1em;
 }
 
-
+/* Header */
 header {
     display: flex;
     flex-direction: row-reverse;
 }
+
 .outer {
     width: 41em;
-    background-color: #F8F9FB;
-    /* background-color: #A435F0; */
+    background-color: #f8f9fB;
 }
 
 .inner_card {
     width: 390px;
     height: 190px;
-    background-color:#FFFFFF;
+    background-color:#fff;
     padding: 24px;
     margin: 70px;
     box-shadow:0 2px 4px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.08);
 }
 
+/* Courses section */
 .explore {
     padding: 24px;
 }
@@ -159,12 +164,13 @@ header {
 .explore h2{
     margin-bottom: 0;
 }
+
 .explore p{
     margin-top: 0;
 }
 
 .tracks {
-    padding: 0px;
+    padding: 0;
     display: flex;
 }
 
@@ -172,31 +178,30 @@ header {
     padding-right: 3em;
     list-style: none;
     font-weight: bold;
-    color: #6A6F73;
+    color: #6a6f73;
 }
 
 .tracks li:hover {
-    color: #1C1D1F;
+    color: #1c1d1f;
     cursor: pointer;
 }
 
-#div59 {
-    border: 2px solid #D1D7DC;
+.card {
+    border: 2px solid #d1d7dc;
     padding: 0 2.5em;
 }
 
-#div59 p {
+.card p {
     margin-right: 10em;
 }
 
 .courses {
-    padding-left: 0px;
+    padding-left: 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 
 .courses li {
     max-width: 16em;
@@ -204,8 +209,9 @@ header {
 }
 
 .courses img {
-    border: 1px solid #D1D7DC;
+    border: 1px solid #d1d7dc;
 }
+
 .courses li img:hover {
     cursor: pointer;
 }
@@ -217,61 +223,66 @@ header {
 
 .courses h4 {
     margin-top: 5px;
-    color: #6A6F73;
+    color: #6a6f73;
     font-weight: 400;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .courses .price {
     margin-top: 5px;
     margin-bottom: 40px;
 }
+
+/* Other screens */
 @media (max-width: 1205px) {
     main {
         width: 1205px;
     }
-    #div59 {
+    .card {
         width: 90%;
     }
 }
+
 @media (max-width: 1065px) {
     main {
         width: 1065px;
     }
-    #div59 {
+
+    .card {
         width: 90%;
     }
 }
+
 @media (max-width: 900px)  {
     main {
         width: 900px;
     }
-    .drop_down {
+
+    .drop_down,
+    .custom_button,
+    .search_bar,
+    .cart {
         display: none;
     }
-    .custom_button {
-        display: none;
-    }
-    .search_bar{
-        display: none;
-    }
-    .cart{
-        display: none;
-    }
+
     header {
-        background-color: #F8F9FB;
+        background-color: #f8f9fb;
         flex-direction: column;
     }
+
     header img {
         width: 50em;
         height: 300px;
     }
+
     .outer {
         margin: auto auto;
     }
-    #div59 {
+
+    .card {
         width: 85%;
     }
+
     .tracks {
         flex-wrap: wrap;
     }
