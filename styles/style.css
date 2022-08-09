@@ -106,7 +106,8 @@ nav {
     color: #000;
 }
 
-.log_in:hover {
+.log_in:hover,
+.lang:hover{
     background-color: #f5f5f5;
     cursor: pointer;
 }
@@ -193,6 +194,19 @@ header {
 
 .card p {
     margin-right: 10em;
+}
+
+.explore_button {
+    height: 40px;
+    font-weight: 700;
+    margin-right: 1em;
+    background-color: #fff;
+    color: #000;
+}
+
+.explore_button:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 .courses {
@@ -285,5 +299,15 @@ header {
 
     .tracks {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 665px) {
+    main {
+        width: 665px;
+    }
+
+    .card {
+        width: 85%;
     }
 }
