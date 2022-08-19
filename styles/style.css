@@ -5,7 +5,8 @@ body {
 }
 
 main {
-    width: 82em;
+    width: 100%;
+    max-width: 82em;
     margin: auto;
 }
 
@@ -147,12 +148,18 @@ nav {
 
 /* Header */
 header {
+    background-color: #f8f9fb;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .outer {
+    /* width: 100%; */
     background-color: #f8f9fB;
+}
+.watch {
+    max-width: 50%;
 }
 
 .inner_card {
@@ -251,7 +258,7 @@ header {
 }
 
 /* Other screens */
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 820px)  {
     main {
         width: 100%;
     }
@@ -271,8 +278,11 @@ header {
     }
 
     header {
-        background-color: #f8f9fb;
         flex-direction: column;
+    }
+
+    .watch {
+        height: 230px;
     }
 
     .outer {
