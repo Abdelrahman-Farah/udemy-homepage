@@ -16,6 +16,7 @@ nav {
     display: flex;
     align-items: center;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 -3em 3em rgba(0,0,0,0.1),
                 0 0  0 2px rgb(255,255,255),
@@ -33,6 +34,7 @@ nav {
     width: 96px;
     height: 50px;
 }
+
 .logo:hover {
     cursor: pointer;
 }
@@ -150,12 +152,10 @@ header {
 }
 
 .outer {
-    width: 41em;
     background-color: #f8f9fB;
 }
 
 .inner_card {
-    width: 390px;
     height: 190px;
     background-color:#fff;
     padding: 24px;
@@ -165,7 +165,8 @@ header {
 
 /* Courses section */
 .explore {
-    padding: 24px;
+    padding: 1.5em;
+    font-size: 1em;
 }
 
 .explore h2{
@@ -195,11 +196,7 @@ header {
 
 .card {
     border: 2px solid #d1d7dc;
-    padding: 0 2.5em;
-}
-
-.card p {
-    margin-right: 10em;
+    padding: 0 2em;
 }
 
 .explore_button {
@@ -254,33 +251,14 @@ header {
 }
 
 /* Other screens */
-@media (max-width: 1205px) {
+@media only screen and (max-width: 900px)  {
     main {
-        width: 1205px;
+        width: 100%;
     }
-    .card {
-        width: 90%;
-    }
-}
-
-@media (max-width: 1065px) {
-    main {
-        width: 1065px;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
-
-@media (max-width: 900px)  {
-    main {
-        width: 900px;
-    }
-
     .drop_down,
     .custom_button,
-    .search_bar {
+    .search_bar,
+    .cart {
         display: none;
     }
 
@@ -289,7 +267,7 @@ header {
     }
 
     .logo {
-        flex: 1;
+        margin: 0 1em 0 auto;
     }
 
     header {
@@ -297,47 +275,14 @@ header {
         flex-direction: column;
     }
 
-    header img {
-        width: 50em;
-        height: 300px;
-    }
-
     .outer {
         margin: auto auto;
     }
-
-    .card {
-        width: 85%;
+    .inner_card {
+        margin: 0;
     }
 
     .tracks {
         flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 665px) {
-    main {
-        width: 665px;
-    }
-
-    .card {
-        width: 85%;
-    }
-}
-
-@media (max-width: 470px) {
-    main {
-        width: 470px;
-    }
-
-    .watch {
-        width: 450px;
-        height: 450px;
-    }
-    .inner_card {
-        margin: 2px;
-    }
-    .card {
-        width: 75%;
     }
 }
