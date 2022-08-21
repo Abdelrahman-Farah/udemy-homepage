@@ -233,10 +233,12 @@ header {
 }
 
 .courses img {
+    width: 240px;
+    height: 135px;
     border: 1px solid #d1d7dc;
 }
 
-.courses li img:hover {
+.courses li:hover {
     cursor: pointer;
 }
 
