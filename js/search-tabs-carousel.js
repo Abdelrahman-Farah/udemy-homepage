@@ -14,9 +14,10 @@ let activeTabDescription = document.querySelector('#tab-description');
 let activeTabButton = document.querySelector('#tab-button');
 
 const getCourses = async () => {
+    let result = await fetch(`https://api.jsonbin.io/v3/b/63065ce65c146d63ca7dbcbc`);
+    let myJSON = await result.json();
     for (let track in courses) {
-        const res = await fetch(`http://localhost:3000/${track}`);
-        courses[track] = await res.json();
+         courses[track] = myJSON['record'][track];
     }
 
     let key = 'Python';

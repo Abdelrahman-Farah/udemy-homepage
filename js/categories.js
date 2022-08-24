@@ -1,8 +1,9 @@
 let categories;
 
 const getCategories = async () => {
-    const categoriesRaw = await fetch('http://localhost:3000/categories');
-    categories = await categoriesRaw.json();
+    let result = await fetch(`https://api.jsonbin.io/v3/b/63065ce65c146d63ca7dbcbc`);
+    let myJSON = await result.json();
+    categories = myJSON['record']['categories'];
     buildCategories();
 }
 
