@@ -116,7 +116,7 @@ function buildCourses(tab) {
         }
 
         const individualSlide = document.createElement('div');
-        individualSlide.classList.add('courses-inject', 'row', 'd-flex', 'flex-nowrsap', 'justify-content-start', 'm-auto');
+        individualSlide.classList.add('courses-inject', 'row', 'd-flex', 'flex-nowrap', 'justify-content-start', 'm-auto');
 
         for (let k = i; k < Math.min(i + cardsPerSlide, temp.length); k++) {
             let course = temp[k];
