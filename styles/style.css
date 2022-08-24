@@ -156,9 +156,9 @@ header {
 }
 
 .outer {
-    /* width: 100%; */
     background-color: #f8f9fB;
 }
+
 .watch {
     max-width: 50%;
 }
@@ -176,12 +176,15 @@ header {
     padding: 1.5em;
     font-size: 1em;
 }
-/*
-.explore h2{
-    margin-bottom: 0;
-} */
 
-.explore p{
+
+
+.explore h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.explore p {
     margin-top: 0;
 }
 
@@ -203,8 +206,9 @@ header {
 }
 
 .frame {
-    border: 3px solid #d1d7dc;
-    padding: 0 2em;
+    border: 2px solid #d1d7dc;
+    border-top: 1px solid #d1d7dc;
+    padding: 0 1.5em;
 }
 
 .explore_button {
@@ -220,41 +224,41 @@ header {
     cursor: pointer;
 }
 
-.courses, #container {
-    padding-left: 0;
+.courses-inject {
+    padding-left: 20px;
     list-style: none;
 }
 
-.courses li, #container div {
+.courses-inject div {
     max-width: 16em;
     line-height: 22px;
 }
 
-.courses img, #container img {
+.courses-inject img{
     width: 240px;
     height: 135px;
     border: 1px solid #d1d7dc;
 }
 
-.courses li:hover, #container li:hover {
+.courses-inject li:hover {
     cursor: pointer;
 }
 
-.courses .title, #container .title {
+.courses-inject .title {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.courses h4, #container h4 {
+.courses-inject h4 {
     margin-top: 5px;
     color: #6a6f73;
     font-weight: 400;
     margin-bottom: 0;
 }
 
-.courses .price, #container .price {
+.courses-inject .price {
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 
@@ -262,10 +266,12 @@ header {
 .categories {
     padding: 1.5em;
 }
+
 .categories img {
     width: 260px;
     height: 260px;
 }
+
 .categories img:hover {
     cursor: pointer;
 }

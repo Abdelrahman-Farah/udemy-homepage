@@ -52,36 +52,52 @@ function containsSearch (course)
 }
 
 
-
-const container = document.querySelector('#container');
+const indicators = document.querySelector('.carousel-indicators');
+const slides = document.querySelector('.carousel-inner');
 function buildCourses (tab)
 {
-    container.innerHTML = '';
-    for (let course of courses[tab]['courses'].filter(containsSearch))
-    {
-       const div = document.createElement('div');
-       div.classList.add('swiper-slide');
+    indicators.innerHTML = '';
+    slides.innerHTML = '';
 
-       const image = document.createElement('img');
-    //    image.classList.add('d-block');
-       image.src = `${course['image']}`;
-       image.alt = `course ${course['id']}`;
+    let temp = courses[tab]['courses'].filter(containsSearch);
+    for (let i=0; i<temp.length; i+=4) {
+        const indicator = document.createElement('button');
+        indicator.setAttribute('type', 'button');
+        indicator.setAttribute('data-bs-target', '#carouselExampleIndicators');
+        indicator.setAttribute('data-bs-slide-to', `${i/4}`);
+        indicator.setAttribute('aria-label', `Slide ${(i/4)+1}`);
 
-       const title = document.createElement('h3');
-       title.innerText = course['title'];
-       title.classList.add('title');
+        if (i == 0) {
+            indicator.setAttribute('class', 'active');
+            indicator.setAttribute('aria-current', 'true');
+        }
 
+        const carouselItem = document.createElement('div');
 
-       const instructors = document.createElement('h4');
-       instructors.innerText = course['instructors'][0]['name'];
+        carouselItem.classList.add('carousel-item');
+        if (i === 0){
+            carouselItem.classList.add('active');
+        }
 
-       const price = document.createElement('h3');
-       price.innerText = `$${course['price']}`;
-       price.classList.add('price');
+        const individualSlide = document.createElement('div');
+        individualSlide.classList.add('courses-inject', 'row', 'd-flex', 'justify-content-start');
 
-       div.append(image, title, instructors, price);
+        for (let k=i; k<Math.min(i+4, temp.length); k++) {
+            let course = temp[k];
+            individualSlide.innerHTML += `
+                <div class="mx-3">
+                    <img src="${course['image']}" alt="course ${course['id']}">
+                    <h3 class="title">${course['title']}</h3>
+                    <h4>${course['instructors'][0]['name']}</h4>
+                    <h3 class="price">$${course['price']}</h3>
+                </div>
 
-       container.append(div);
+            `;
+        }
+        carouselItem.append(individualSlide);
+        slides.append(carouselItem);
+
+        indicators.append(indicator);
     }
 }
 

@@ -1,3 +1,4 @@
+/* restore browser defaults INSTEAD of bootstrap defaults */
 html {
 	font-size: 16px;
 }
@@ -44,6 +45,7 @@ h4 {
     font-weight: bold;
 }
 
+/* change bootstrap "navs & tabs" colors */
 .nav {
     --bs-nav-link-color: #6a6f73;
     --bs-nav-link-hover-color: #a435f0;
@@ -54,36 +56,28 @@ h4 {
 }
 
 
- /* swiper js defaults */
-html,
-body {
-    position: relative;
-    height: 100%;
+/* change colors of bootstrap carousel (indicators and controllers) */
+.carousel-indicators [data-bs-target] {
+    background-color: #a435f0;
 }
 
-body {
-    background: #eee;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+.carousel-control-next {
+    width: 12%;
+    justify-content: end;
 }
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
+.carousel-control-prev {
+    width: 12%;
     justify-content: start;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+.carousel-control-prev-icon {
+    width: 45px;
+    height: 45px;
+    background-image: url('../icons/next.png');
+ }
+ .carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+   background-image: url('../icons/previous.png')
+ }
