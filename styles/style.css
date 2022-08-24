@@ -1,5 +1,6 @@
 body {
     background-color: #fff;
+    color: #000;
     margin: 0;
     font-family: 'Cairo', sans-serif;
 }
@@ -175,10 +176,10 @@ header {
     padding: 1.5em;
     font-size: 1em;
 }
-
+/*
 .explore h2{
     margin-bottom: 0;
-}
+} */
 
 .explore p{
     margin-top: 0;
@@ -201,8 +202,8 @@ header {
     cursor: pointer;
 }
 
-.card {
-    border: 2px solid #d1d7dc;
+.frame {
+    border: 3px solid #d1d7dc;
     padding: 0 2em;
 }
 
@@ -219,45 +220,56 @@ header {
     cursor: pointer;
 }
 
-.courses {
+.courses, #container {
     padding-left: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.courses li {
+.courses li, #container div {
     max-width: 16em;
     line-height: 22px;
 }
 
-.courses img {
+.courses img, #container img {
     width: 240px;
     height: 135px;
     border: 1px solid #d1d7dc;
 }
 
-.courses li:hover {
+.courses li:hover, #container li:hover {
     cursor: pointer;
 }
 
-.courses .title{
+.courses .title, #container .title {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.courses h4 {
+.courses h4, #container h4 {
     margin-top: 5px;
     color: #6a6f73;
     font-weight: 400;
     margin-bottom: 0;
 }
 
-.courses .price {
+.courses .price, #container .price {
     margin-top: 5px;
     margin-bottom: 40px;
 }
+
+
+/* Categories */
+.categories {
+    padding: 1.5em;
+}
+.categories img {
+    width: 260px;
+    height: 260px;
+}
+.categories img:hover {
+    cursor: pointer;
+}
+
 
 /* Other screens */
 @media only screen and (max-width: 820px)  {

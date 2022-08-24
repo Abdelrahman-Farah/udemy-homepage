@@ -1,0 +1,89 @@
+html {
+	font-size: 16px;
+}
+
+.search_icon {
+    box-sizing: content-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 {
+	display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.nav {
+    --bs-nav-link-color: #6a6f73;
+    --bs-nav-link-hover-color: #a435f0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #a435f0;
+}
+
+
+ /* swiper js defaults */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
