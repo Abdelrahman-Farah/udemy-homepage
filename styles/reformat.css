@@ -1,0 +1,83 @@
+/* restore browser defaults INSTEAD of bootstrap defaults */
+html {
+	font-size: 16px;
+}
+
+.search_icon {
+    box-sizing: content-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 {
+	display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/* change bootstrap "navs & tabs" colors */
+.nav {
+    --bs-nav-link-color: #6a6f73;
+    --bs-nav-link-hover-color: #a435f0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #a435f0;
+}
+
+
+/* change colors of bootstrap carousel (indicators and controllers) */
+.carousel-indicators [data-bs-target] {
+    background-color: #a435f0;
+}
+
+.carousel-control-next {
+    width: 12%;
+    justify-content: end;
+}
+
+.carousel-control-prev {
+    width: 12%;
+    justify-content: start;
+}
+
+.carousel-control-prev-icon {
+    width: 45px;
+    height: 45px;
+    background-image: url('../icons/next.png');
+ }
+ .carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+   background-image: url('../icons/previous.png')
+ }

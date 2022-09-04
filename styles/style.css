@@ -1,5 +1,6 @@
 body {
     background-color: #fff;
+    color: #000;
     margin: 0;
     font-family: 'Cairo', sans-serif;
 }
@@ -155,9 +156,9 @@ header {
 }
 
 .outer {
-    /* width: 100%; */
     background-color: #f8f9fB;
 }
+
 .watch {
     max-width: 50%;
 }
@@ -176,11 +177,14 @@ header {
     font-size: 1em;
 }
 
+
+
 .explore h2{
-    margin-bottom: 0;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-.explore p{
+.explore p {
     margin-top: 0;
 }
 
@@ -201,9 +205,10 @@ header {
     cursor: pointer;
 }
 
-.card {
+.frame {
     border: 2px solid #d1d7dc;
-    padding: 0 2em;
+    border-top: 1px solid #d1d7dc;
+    padding: 0 1.5em;
 }
 
 .explore_button {
@@ -219,43 +224,58 @@ header {
     cursor: pointer;
 }
 
-.courses {
-    padding-left: 0;
+.courses-inject {
+    padding-left: 20px;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.courses li {
+.courses-inject div {
     max-width: 16em;
     line-height: 22px;
 }
 
-.courses img {
+.courses-inject img{
+    width: 240px;
+    height: 135px;
     border: 1px solid #d1d7dc;
 }
 
-.courses li img:hover {
+.courses-inject li:hover {
     cursor: pointer;
 }
 
-.courses .title{
+.courses-inject .title {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.courses h4 {
+.courses-inject h4 {
     margin-top: 5px;
     color: #6a6f73;
     font-weight: 400;
     margin-bottom: 0;
 }
 
-.courses .price {
+.courses-inject .price {
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
+
+
+/* Categories */
+.categories {
+    padding: 1.5em;
+}
+
+.categories img {
+    width: 260px;
+    height: 260px;
+}
+
+.categories img:hover {
+    cursor: pointer;
+}
+
 
 /* Other screens */
 @media only screen and (max-width: 820px)  {

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Online courses - Udemy</title>
-    <link rel="stylesheet" href="styles/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/reformat.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <nav>
         <img class="menu" src="icons/menu_icon.png" alt="menu">
@@ -16,8 +22,8 @@
         <a href="#" class="drop_down">Categories</a>
 
         <form action="" class="search_bar">
-            <button type="submit" ><img class="search_icon" src="icons/search_icon.png" alt="search"></button>
-            <input class="search_box" type="text" placeholder="Search for anything" required>
+            <button type="submit"><img class="search_icon" src="icons/search_icon.png" alt="search"></button>
+            <input class="search_box" type="text" placeholder="Search for anything">
             <input id="search_submit" type="submit" value="Search">
         </form>
 
@@ -31,90 +37,78 @@
         <button class="lang custom_button"><img src="icons/language.svg"></button>
     </nav>
 
-     <main>
+    <main>
         <header>
             <img class="watch" src="icons/header_watch.jpg" alt="header">
             <div class="outer">
-                <div class="inner_card">
+                <div class="inner_card d-flex flex-column justify-content-center">
                     <h2>New to Udemy? Lucky you.</h1>
                     <p>Courses start at E£169.99. Get your new-student offer before it expires.</p>
                 </div>
             </div>
         </header>
 
-           <section class="explore">
+        <section class="explore">
             <div>
                 <h2>A broad selection of courses</h2>
                 <p>Choose from 185,000 online video courses with new additions published every month.</p>
             </div>
 
-            <ul class="tracks">
-                <li>Python</li>
-                <li>Excel</li>
-                <li>Web Development</li>
-                <li>JavaScript</li>
-                <li>Data Science</li>
-                <li>AWS Certification</li>
-                <li>Drawing</li>
+            <ul id="courses-tabs" class="tracks nav nav-tabs">
+                <li class="nav-item"><a id="python" class="nav-link active" href="#">Python</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Excel</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Web Development</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">Data Science</a></li>
+                <li class="nav-item"><a class="nav-link " href="#">AWS Certification</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Drawing</a></li>
             </ul>
 
-              <div class="card">
-                <h2>Expand your career opportunities with Python</h2>
-                <p>Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...</p>
-                <button class="explore_button">Explore Python</button>
+            <div class="frame">
+                <h2 id="tab-header"></h2>
+                <p id="tab-description"></p>
+                <button id="tab-button" class="explore_button mb-3"></button>
 
-                <ul class="courses">
-                    <li>
-                        <img src="courses/1.jpg" alt="course #1">
-                        <h3 class="title">Learn Python: The Complete Python Programming Course</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/2.jpg" alt="course #2">
-                        <h3 class="title">Learning Python for Data Analysis and Visualization</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/3.jpg" alt="course #3">
-                        <h3 class="title">Python for Beginners - Learn Programming from scratch</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/4.jpg" alt="course #4">
-                        <h3 class="title">Learn Python: Python for Beginners</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/5.jpg" alt="course #5">
-                        <h3 class="title">Python Beyond the Basics - Object-Oriented Programming</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/6.jpg" alt="course #6">
-                        <h3 class="title">Python for Data Structures, Algorithms, and Interviews!</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/7.jpg" alt="course #7">
-                        <h3 class="title">Automate the Boring Stuff with Python Programming</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                    <li>
-                        <img src="courses/8.jpg" alt="course #8">
-                        <h3 class="title">Python for Beginners with Examples</h3>
-                        <h4>Avinash Jain, The Codex</h4>
-                        <h3 class="price">E£519.99</h3>
-                    </li>
-                </ul>
+
+                <hr>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators ">
+                        <!-- indicator injected here -->
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- slides injected here -->
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
             </div>
         </section>
+
+
+        <section class="container-fluid categories">
+            <h2>Top Categories</h2>
+            <div id="categories-container" class="row d-flex">
+                <!-- Categories injected here -->
+            </div>
+        </section>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="js/search-tabs-carousel.js"></script>
+    <script src="js/categories.js"></script>
 </body>
+
 </html>
